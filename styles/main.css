@@ -1,0 +1,12 @@
+@import "JournalEntry.css";
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    font-size: 50pt;
+}
+
