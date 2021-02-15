@@ -28,7 +28,6 @@ export const getEntries = () => {
         .then(entries => {
             // What should happen when we finally have the array?
             console.table(entries)
-            return entries
         
         })
 }
