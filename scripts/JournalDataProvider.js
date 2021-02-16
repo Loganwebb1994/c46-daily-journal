@@ -25,9 +25,5 @@ export const getEntries = () => {
     
     return fetch("http://localhost:8088/entries") // Fetch from the API
         .then(entries=> entries.json())  // Parse as JSON
-        .then(entries => {
-            // What should happen when we finally have the array?
-            console.table(entries)
-        
-        })
+        .then(taco => entries = taco)
 }
