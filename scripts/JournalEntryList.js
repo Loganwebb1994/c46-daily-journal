@@ -10,14 +10,3 @@ export const EntryList = () => {
     .then(render(entries))
 }
 
-const render = (entriesArray) => {
-    contentTarget.innerHTML = 
-        `<h3>Entry #${entriesArray.id}</h3>
-            ${entriesArray.map(entry =>{
-                return`
-                    <section id="entry--${entry.id}" class="journalEntry">
-                        <p>- ${entry.date}</p>
-                        <p>${entry.concept}</p>
-                        <p>${entry.mood}</p>
-                        <p>${entry.entry}</p>
-                    </section>`}).join("")}
