@@ -3,6 +3,12 @@ import { JournalEntryComponent } from "./JournalEntry.js"
 
 // DOM reference to where all entries will be rendered
 const contentTarget = document.querySelector(".entryLog")
+const eventHub = document.querySelector(".container")
+
+eventHub.addEventListener("journalStateChanged", event => {
+    getEntries()
+    .then(EntryList)
+})
 
 export const EntryList = () => {
     // Use the journal entry data from the data provider component

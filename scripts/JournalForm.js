@@ -33,7 +33,7 @@ eventHub.addEventListener("click", clickEvent =>{
             date: date,
             concept: concept,
             entry: entry,
-            mood: mood,
+            mood: mood
         }
         saveJournalEntry(newEntry)
     }
