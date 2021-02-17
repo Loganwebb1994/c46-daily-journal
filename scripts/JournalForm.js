@@ -29,7 +29,7 @@ eventHub.addEventListener("click", clickEvent =>{
         const concept = document.getElementById("journal__concept").value
         const entry = document.getElementById("journal__entry").value
         const mood = document.getElementById("journal__mood").value
-
+        console.log(date, "submit button clicked")
         const newEntry = {
             date: date,
             concept: concept,
