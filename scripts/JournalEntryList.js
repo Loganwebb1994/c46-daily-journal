@@ -6,12 +6,13 @@ const contentTarget = document.querySelector(".entryLog")
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("journalStateChanged", event => {
+    console.log("The listener to refresh the page after a save works")
     getEntries()
     .then(EntryList)
 })
 
 export const EntryList = () => {
-    // Use the journal entry data from the data provider component
+    contentTarget.innerHTML = ""
     getEntries()
     .then(() => {
         const entries = useJournalEntries()
