@@ -4,15 +4,43 @@
       "date": "2021-02-18",
       "concept": "journalEntry",
       "entry": "test",
-      "mood": "happy",
+      "moodId": 1,
       "id": 1
     },
     {
       "date": "2022-06-18",
       "concept": "journalEntry",
       "entry": "test",
-      "mood": "happy",
+      "moodId": 1,
       "id": 2
+    },
+    {
+      "date": "2021-02-17",
+      "concept": "journalEntry",
+      "entry": "entry",
+      "moodId": 3,
+      "id": 3
+    },
+    {
+      "date": "2021-02-17",
+      "concept": "break it?",
+      "entry": "broke it",
+      "mood": "happy",
+      "id": 4
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "happy"
+    },
+    {
+      "id": 2,
+      "label": "neutral"
+    },
+    {
+      "id": 3,
+      "label": "sad"
     }
   ]
 }

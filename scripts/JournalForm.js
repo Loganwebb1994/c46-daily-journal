@@ -14,9 +14,13 @@ export const JournalForm = () =>{
             <textarea class="journal__entry" name="journalEntry" id="journal__entry" cols="30" rows="10"></textarea>
             <label for="moodSelector">Today's Mood</label>
             <select class="journal__mood" name="moodSelector" id="journal__mood">
-            <option id="journal__mood" value="happy">happy</option>
-            <option id="journal__mood" value="neutral">neutral</option>
-            <option id="journal__mood" value="sad">sad</option>
+            ${
+                allMoods.map(
+                    (mood) => {
+                        return `<option value="${ mood.id }">${ mood.label }</option>`
+                    }
+                ).join("")
+            }
             </select>
             </fieldset>
             <button class="submitEntryButton" type="submit" id="SubmitEntry">Save Entry</button>
