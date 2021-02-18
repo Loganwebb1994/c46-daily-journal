@@ -1,18 +1,46 @@
 {
   "entries": [
     {
-      "date": "2021-02-18",
+      "date": "2021-02-10",
       "concept": "journalEntry",
-      "entry": "test",
-      "mood": "happy",
+      "entry": "Good job nick",
+      "moodId": "1",
       "id": 1
     },
     {
-      "date": "2022-06-18",
+      "date": "2021-02-01",
       "concept": "journalEntry",
-      "entry": "test",
-      "mood": "happy",
+      "entry": "Tentatively excited",
+      "moodId": "1",
       "id": 2
+    },
+    {
+      "date": "2021-02-01",
+      "concept": "journalEntry",
+      "entry": "Tentatively excited",
+      "moodId": "1",
+      "id": 3
+    },
+    {
+      "date": "2021-02-10",
+      "concept": "journalEntry",
+      "entry": "idk",
+      "moodId": 3,
+      "id": 4
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "happy"
+    },
+    {
+      "id": 2,
+      "label": "neutral"
+    },
+    {
+      "id": 3,
+      "label": "sad"
     }
   ]
 }

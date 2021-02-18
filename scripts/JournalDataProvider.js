@@ -12,7 +12,7 @@ export const useJournalEntries = () => {
 
 export const getEntries = () => {
     
-    return fetch("http://localhost:8088/entries") // Fetch from the API
+    return fetch("http://localhost:8088/entries?_expand=mood") // Fetch from the API
         .then(entries=> entries.json())  // Parse as JSON
         .then(taco => entries = taco)
 }

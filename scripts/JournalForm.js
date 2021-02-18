@@ -1,8 +1,16 @@
 import {saveJournalEntry} from "./JournalDataProvider.js"
+import {getMoods, useMoods} from "./MoodProvider.js"
 const contentTarget = document.querySelector(".journalEntry")
 const eventHub = document.querySelector(".container")
 
 export const JournalForm = () =>{
+    getMoods()
+    .then(() =>
+    { let moodsArray = useMoods()
+    render(moodsArray)})
+}
+
+const render = (allMoods) =>{
     contentTarget.innerHTML = `
     <form>   
         <fieldset class="journalPage">
@@ -14,15 +22,20 @@ export const JournalForm = () =>{
             <textarea class="journal__entry" name="journalEntry" id="journal__entry" cols="30" rows="10"></textarea>
             <label for="moodSelector">Today's Mood</label>
             <select class="journal__mood" name="moodSelector" id="journal__mood">
-            <option id="journal__mood" value="happy">happy</option>
-            <option id="journal__mood" value="neutral">neutral</option>
-            <option id="journal__mood" value="sad">sad</option>
+            ${
+                allMoods.map(
+                    (mood) => {
+                        return `<option value="${ mood.id }">${ mood.label }</option>`
+                    }
+                ).join("")
+            }
             </select>
             </fieldset>
             <button class="submitEntryButton" type="submit" id="SubmitEntry">Save Entry</button>
     </form>
     `
 }
+
 eventHub.addEventListener("click", clickEvent =>{
     if(clickEvent.target.id === "SubmitEntry"){
         clickEvent.preventDefault()
@@ -35,7 +48,7 @@ eventHub.addEventListener("click", clickEvent =>{
             date: date,
             concept: concept,
             entry: entry,
-            mood: mood
+            moodId: parseInt(mood)
         }
         saveJournalEntry(newEntry)
     }
