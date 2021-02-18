@@ -1,31 +1,31 @@
 {
   "entries": [
     {
-      "date": "2021-02-18",
+      "date": "2021-02-10",
       "concept": "journalEntry",
-      "entry": "test",
-      "moodId": 1,
+      "entry": "Good job nick",
+      "moodId": "1",
       "id": 1
     },
     {
-      "date": "2022-06-18",
+      "date": "2021-02-01",
       "concept": "journalEntry",
-      "entry": "test",
-      "moodId": 1,
+      "entry": "Tentatively excited",
+      "moodId": "1",
       "id": 2
     },
     {
-      "date": "2021-02-17",
+      "date": "2021-02-01",
       "concept": "journalEntry",
-      "entry": "entry",
-      "moodId": 3,
+      "entry": "Tentatively excited",
+      "moodId": "1",
       "id": 3
     },
     {
-      "date": "2021-02-17",
-      "concept": "break it?",
-      "entry": "broke it",
-      "mood": "happy",
+      "date": "2021-02-10",
+      "concept": "journalEntry",
+      "entry": "idk",
+      "moodId": 3,
       "id": 4
     }
   ],

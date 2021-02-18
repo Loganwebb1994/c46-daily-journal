@@ -1,8 +1,16 @@
 import {saveJournalEntry} from "./JournalDataProvider.js"
+import {getMoods, useMoods} from "./MoodProvider.js"
 const contentTarget = document.querySelector(".journalEntry")
 const eventHub = document.querySelector(".container")
 
 export const JournalForm = () =>{
+    getMoods()
+    .then(() =>
+    { let moodsArray = useMoods()
+    render(moodsArray)})
+}
+
+const render = (allMoods) =>{
     contentTarget.innerHTML = `
     <form>   
         <fieldset class="journalPage">
@@ -27,6 +35,7 @@ export const JournalForm = () =>{
     </form>
     `
 }
+
 eventHub.addEventListener("click", clickEvent =>{
     if(clickEvent.target.id === "SubmitEntry"){
         clickEvent.preventDefault()
@@ -39,7 +48,7 @@ eventHub.addEventListener("click", clickEvent =>{
             date: date,
             concept: concept,
             entry: entry,
-            mood: mood
+            moodId: parseInt(mood)
         }
         saveJournalEntry(newEntry)
     }
