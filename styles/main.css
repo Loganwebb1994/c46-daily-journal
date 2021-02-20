@@ -1,10 +1,7 @@
 @import "JournalEntry.css";
+@import "header-footer.css";
 
 
-body{
-    display: flex;
-    flex-direction: column;
-}
 .title{
     text-align: center;
     font-size: 50pt;
