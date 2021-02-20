@@ -12,27 +12,28 @@ export const JournalForm = () =>{
 
 const render = (allMoods) =>{
     contentTarget.innerHTML = `
-    <form>   
-        <fieldset class="journalPage">
-            <label for="journalDate">Date of Entry</label>
-            <input class="journal__date" type="date" name="journalDate" id="journal__date">
-            <label for="conceptsCovered">Concepts Covered</label>
-            <input class="journal__concept" type="text" name="conceptsCovered" id="journal__concept">
-            <label for="journalEntry">Journal Entry</label>
-            <textarea class="journal__entry" name="journalEntry" id="journal__entry" cols="30" rows="10"></textarea>
+    <input class="journal__date" type="date" name="journalDate" id="journal__date">
+    <h2 class="newTitle">New Journal Entry</h2>
+    <form id="newEntryForm>   
+        <fieldset>
+            <label for="conceptsCovered">Title:</label>
+            <input class="journal__concept" type="text" placeholder="
+            Main Idea/Concepts Covered" id="journal__concept">
+        </fieldset>
+        <fieldset>        
+            <label for="journalEntry">New Entry:</label>
+            <textarea class="journal__entry" placeholder="Begin New Entry..." name="journalEntry" id="journal__entry" cols="30" rows="10"></textarea>
+        </fieldset>        
+        <fieldset>
             <label for="moodSelector">Today's Mood</label>
             <select class="journal__mood" name="moodSelector" id="journal__mood">
-            ${
-                allMoods.map(
-                    (mood) => {
-                        return `<option value="${ mood.id }">${ mood.label }</option>`
-                    }
-                ).join("")
-            }
+            ${allMoods.map((mood) => {return `<option value="${ mood.id }">${ mood.label }</option>`}).join("")}
             </select>
-            </fieldset>
+        </fieldset>
+        <fieldset class="buttonLocation">         
             <button class="submitEntryButton" type="submit" id="SubmitEntry">Save Entry</button>
-    </form>
+        </fieldset>        
+        </form>
     `
 }
 
