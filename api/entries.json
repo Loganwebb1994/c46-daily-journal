@@ -13,20 +13,47 @@
       "entry": "I am now styling the individual entries.",
       "moodId": 1,
       "id": 2
+    },
+    {
+      "date": "2021-02-20",
+      "concept": "Making Daily Journal",
+      "entry": "I've finally finished the styling... for now. I've added some more specific moods.",
+      "moodId": 1,
+      "id": 3
     }
   ],
   "moods": [
     {
       "id": 1,
-      "label": "Happy"
+      "label": "On Top Of The World"
     },
     {
       "id": 2,
-      "label": "Neutral"
+      "label": "Confident"
     },
     {
       "id": 3,
-      "label": "Sad"
+      "label": "Excited"
+    },
+    {
+      "id": 4,
+      "label": "Neutral"
+    },
+    {
+      "id": 5,
+      "label": "Stressed"
+    },
+    {
+      "id": 6,
+      "label": "Having a Breakdown"
+    },
+    {
+      "id": 7,
+      "label": "ADHD"
+    },
+    {
+      "id": 2,
+      "label": "Dead Inside"
     }
   ]
 }

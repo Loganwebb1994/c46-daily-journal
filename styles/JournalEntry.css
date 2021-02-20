@@ -15,12 +15,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-self: right;
 }
-.submitEntryButton{background-color: #4137fd}
+.submitEntryButton:hover {background-color: #3027d6}
 
-.submitEntryButton{
+.submitEntryButton:active{
     background-color: #4137fd;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    transform: translateY(3px);
 }
 
 .journalItem{
