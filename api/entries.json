@@ -1,32 +1,11 @@
 {
   "entries": [
     {
-      "date": "2021-02-10",
-      "concept": "journalEntry",
-      "entry": "Good job nick",
-      "moodId": "1",
+      "date": "2021-02-19",
+      "concept": "Session Storage",
+      "entry": "Today I learned how to use session storage as a temporary set up for user logins. ",
+      "moodId": 1,
       "id": 1
-    },
-    {
-      "date": "2021-02-01",
-      "concept": "journalEntry",
-      "entry": "Tentatively excited",
-      "moodId": "1",
-      "id": 2
-    },
-    {
-      "date": "2021-02-01",
-      "concept": "journalEntry",
-      "entry": "Tentatively excited",
-      "moodId": "1",
-      "id": 3
-    },
-    {
-      "date": "2021-02-10",
-      "concept": "journalEntry",
-      "entry": "idk",
-      "moodId": 3,
-      "id": 4
     }
   ],
   "moods": [

@@ -1,4 +1,4 @@
-import { getEntries, useJournalEntries } from "./JournalDataProvider.js"
+import { getEntries, useJournalEntries,deleteEntry } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
 // DOM reference to where all entries will be rendered
@@ -29,3 +29,11 @@ export const EntryList = () => {
     
 }
 
+
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("deleteEntry--")) {
+        const [prefix, id] = clickEvent.target.id.split("--")
+        deleteEntry(id).then(EntryList)
+        
+
+}})
