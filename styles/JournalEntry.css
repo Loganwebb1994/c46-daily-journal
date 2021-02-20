@@ -7,9 +7,44 @@
 
 .submitEntryButton{
     margin-top: 15px;
+    width: 100px;
 }
 
 .journalItem{
     margin-bottom: 10px;
 }
 
+
+fieldset {
+	display: flex;
+    flex-flow: column wrap;	
+    border: none;
+    flex-direction: column;
+}
+.journal__mood{
+    width: 177px;
+    margin-top: 17px;
+}
+.fieldset--title{
+    display: flex;
+    flex-direction: column;
+}
+.fieldset--entry{
+    display: flex;
+    flex-direction: column;
+}
+.fieldset--mood{
+    display: flex;
+    flex-direction: column;
+}
+.newTitle{
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+}
+.journal__date{
+    height:25px;
+    width: auto;
+}
+.entryFormTitle{
+    font-family:'Raleway', sans-serif;
+}

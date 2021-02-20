@@ -1,5 +1,6 @@
 @import "JournalEntry.css";
 @import "header-footer.css";
+@import "NewEntry.css";
 
 
 .title{
@@ -7,3 +8,21 @@
     font-size: 50pt;
 }
 
+.container{
+    display:flex;
+
+}
+
+.container--left{
+    padding: 50px;
+    width: 35%;
+}
+.container--right{
+    margin:100px 300px 100px 300px;
+    padding: 50px;
+    background-color:#ecdada;
+    box-shadow: 10px 10px 10px 10px #888888;
+    width:75%;
+    height:600px;
+    
+}

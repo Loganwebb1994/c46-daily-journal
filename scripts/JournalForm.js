@@ -1,6 +1,6 @@
 import {saveJournalEntry} from "./JournalDataProvider.js"
 import {getMoods, useMoods} from "./MoodProvider.js"
-const contentTarget = document.querySelector(".journalEntry")
+const contentTarget = document.querySelector(".container--right")
 const eventHub = document.querySelector(".container")
 
 export const JournalForm = () =>{
@@ -12,20 +12,21 @@ export const JournalForm = () =>{
 
 const render = (allMoods) =>{
     contentTarget.innerHTML = `
+    
     <input class="journal__date" type="date" name="journalDate" id="journal__date">
     <h2 class="newTitle">New Journal Entry</h2>
-    <form id="newEntryForm>   
-        <fieldset>
-            <label for="conceptsCovered">Title:</label>
+    <form id="newEntryForm">   
+        <fieldset class="fieldset--title">
+            <p class="entryFormTitle">Title:</p>
             <input class="journal__concept" type="text" placeholder="
-            Main Idea/Concepts Covered" id="journal__concept">
+            Main Idea" id="journal__concept">
         </fieldset>
-        <fieldset>        
-            <label for="journalEntry">New Entry:</label>
+        <fieldset class="fieldset--entry">        
+            <p class="entryFormTitle">New Entry:</p>
             <textarea class="journal__entry" placeholder="Begin New Entry..." name="journalEntry" id="journal__entry" cols="30" rows="10"></textarea>
         </fieldset>        
-        <fieldset>
-            <label for="moodSelector">Today's Mood</label>
+        <fieldset class="fieldset--mood">
+            <label class="entryFormTitle">Current Mood:</label>
             <select class="journal__mood" name="moodSelector" id="journal__mood">
             ${allMoods.map((mood) => {return `<option value="${ mood.id }">${ mood.label }</option>`}).join("")}
             </select>

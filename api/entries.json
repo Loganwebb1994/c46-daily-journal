@@ -2,24 +2,38 @@
   "entries": [
     {
       "date": "2021-02-20",
-      "concept": "lakshfksjdhls",
-      "entry": "sdf.k,agsjfdjhykagjhdsl",
+      "concept": "Making Daily Journal",
+      "entry": "I am now styling the entry card.",
       "moodId": 1,
       "id": 1
+    },
+    {
+      "date": "2021-02-20",
+      "concept": "Making Daily Journal",
+      "entry": "I am now styling the individual entries.",
+      "moodId": 1,
+      "id": 2
+    },
+    {
+      "date": "2021-02-21",
+      "concept": "Making Daily Journal",
+      "entry": "Now the layout is done. It's time to pick the permanent colors for the application.",
+      "moodId": 1,
+      "id": 3
     }
   ],
   "moods": [
     {
       "id": 1,
-      "label": "happy"
+      "label": "Happy"
     },
     {
       "id": 2,
-      "label": "neutral"
+      "label": "Neutral"
     },
     {
       "id": 3,
-      "label": "sad"
+      "label": "Sad"
     }
   ]
 }
