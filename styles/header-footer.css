@@ -1,10 +1,22 @@
-header, footer{
+header{
         background-color: #FDF8F5;
         color: #4F4846;
         display: flex;
         height:100px;
         padding: 50px;
         justify-content:center ;
+        box-shadow: 10px 10px 10px 10px #888888;
+
+    }
+
+footer{
+        background-color: #FDF8F5;
+        color: #4F4846;
+        display: flex;
+        height:20px;
+        padding: 50px;
+        justify-content:flex-end ;
+        box-shadow: 10px 10px 10px 10px #888888;
 
     }
 

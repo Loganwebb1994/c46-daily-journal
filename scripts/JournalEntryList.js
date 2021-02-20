@@ -2,7 +2,7 @@ import { getEntries, useJournalEntries,deleteEntry } from "./JournalDataProvider
 import { JournalEntryComponent } from "./JournalEntry.js"
 
 // DOM reference to where all entries will be rendered
-const contentTarget = document.querySelector(".entryLog")
+const contentTarget = document.querySelector(".container--left")
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("journalStateChanged", event => {
