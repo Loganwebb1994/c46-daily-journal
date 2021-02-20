@@ -22,6 +22,7 @@ export const EntryList = () => {
         }
         contentTarget.innerHTML +=`
         <div class="entry__list">
+        <h2 class="newTitle">My Entries</h2>
         ${entriesHTMLRepresentation}
         </div>
         `

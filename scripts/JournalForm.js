@@ -17,16 +17,16 @@ const render = (allMoods) =>{
     <h2 class="newTitle">New Journal Entry</h2>
     <form id="newEntryForm">   
         <fieldset class="fieldset--title">
-            <p class="entryFormTitle">Title:</p>
+            <h4 class="entryFormTitle">Title:</h4>
             <input class="journal__concept" type="text" placeholder="
             Main Idea" id="journal__concept">
         </fieldset>
         <fieldset class="fieldset--entry">        
-            <p class="entryFormTitle">New Entry:</p>
+            <h4 class="entryFormTitle">New Entry:</h4>
             <textarea class="journal__entry" placeholder="Begin New Entry..." name="journalEntry" id="journal__entry" cols="30" rows="10"></textarea>
         </fieldset>        
         <fieldset class="fieldset--mood">
-            <label class="entryFormTitle">Current Mood:</label>
+            <h4 class="entryFormTitle">Current Mood:</h4>
             <select class="journal__mood" name="moodSelector" id="journal__mood">
             ${allMoods.map((mood) => {return `<option value="${ mood.id }">${ mood.label }</option>`}).join("")}
             </select>
