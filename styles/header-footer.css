@@ -5,7 +5,7 @@ header{
         height:100px;
         padding: 50px;
         justify-content:center ;
-        box-shadow: 10px 10px 10px 10px #888888;
+        box-shadow: 6px 6px 6px 6px #888888;
 
     }
 
@@ -40,17 +40,17 @@ footer{
 .gitHubButton{
     width: 100px;
     padding: 4px;
-    border: solid 3px #4137fd;
-    background-color: #4137fd;
+    border: solid 3px #3027d6;
+    background-color: #3027d6;
     color: ghostwhite;
     margin: 8px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-self: right;
 
 }
-.gitHubButton:hover {background-color: #3027d6}
+.gitHubButton:hover {background-color: #4137fd}
 
 .gitHubButton:active {
-    background-color: #4137fd;
+    background-color: #3027d6;
     transform: translateY(3px);
 }
