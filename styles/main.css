@@ -10,17 +10,17 @@
 
 .container{
     display:flex;
-
 }
 
 .container--left{
     padding: 50px;
     width: 35%;
+    margin-left: 200px;
 }
 .container--right{
-    margin:100px 300px 100px 300px;
+    margin:100px 250px 100px 100px;
     padding: 50px;
-    background-color:#ecdada;
+    background-color:#fcf1e8;
     box-shadow: 10px 10px 10px 10px #888888;
     width:75%;
     height:600px;

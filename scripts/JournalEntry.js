@@ -7,7 +7,7 @@ export const JournalEntryComponent = (entry) => {
             <h3 class="newEntry">${entry.concept}</h3>
             <p class="newEntry">Mood: ${entry.mood.label}</p>
             <p class="newEntry">${entry.entry}</p>
-            <button id="deleteEntry--${entry.id}">Delete</button>
+            <button class="deleteButton" id="deleteEntry--${entry.id}">Delete</button>
         </section>
     `
 }

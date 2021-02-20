@@ -36,3 +36,22 @@ footer{
         width: auto;
 
     }
+
+.gitHubButton{
+    width: 100px;
+    padding: 4px;
+    border: solid 3px #4137fd;
+    background-color: #4137fd;
+    color: ghostwhite;
+    margin: 8px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: right;
+
+}
+.gitHubButton:hover {background-color: #4137fd}
+
+.gitHubButton:active {
+    background-color: #4137fd;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

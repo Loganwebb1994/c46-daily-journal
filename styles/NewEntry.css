@@ -3,9 +3,26 @@
 }
 
 .journalEntry{
-    background-color: #bdcaff;
+    background-color: #fcf1e8;
     box-shadow: 5px 5px 5px 5px #888888;
-    padding: 50px;
+    padding: 30px;
     margin-top: 50px
     
+}
+.deleteButton{
+    width: 100px;
+    padding: 4px;
+    border: solid 3px #4137fd;
+    background-color: #4137fd;
+    color: ghostwhite;
+    margin: 8px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: right;
+}
+.deleteButton {background-color: #4137fd}
+
+.deleteButton {
+    background-color: #4137fd;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
