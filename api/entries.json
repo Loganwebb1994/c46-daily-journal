@@ -3,13 +3,6 @@
     {
       "date": "2021-02-20",
       "concept": "Making Daily Journal",
-      "entry": "I am now styling the entry card.",
-      "moodId": 1,
-      "id": 1
-    },
-    {
-      "date": "2021-02-20",
-      "concept": "Making Daily Journal",
       "entry": "I am now styling the individual entries.",
       "moodId": 1,
       "id": 2
@@ -20,6 +13,20 @@
       "entry": "I've finally finished the styling... for now. I've added some more specific moods.",
       "moodId": 1,
       "id": 3
+    },
+    {
+      "date": "2021-02-21",
+      "concept": "Making Daily Journal",
+      "entry": "Im styling the buttons to match the logo and depress when clicked",
+      "moodId": 3,
+      "id": 4
+    },
+    {
+      "date": "",
+      "concept": "Making Daily Journal",
+      "entry": "I think it's done!!",
+      "moodId": 2,
+      "id": 5
     }
   ],
   "moods": [
