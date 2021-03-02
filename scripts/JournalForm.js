@@ -14,7 +14,7 @@ const render = (allMoods) =>{
     contentTarget.innerHTML = `
     
     <input class="journal__date" type="date" name="journalDate" id="journal__date">
-    <h2 class="newTitle">New Journal Entry</h2>
+    <h1 class="newTitle">New Journal Entry</h1>
     <form id="newEntryForm">   
         <fieldset class="fieldset--title">
             <h4 class="entryFormTitle">Title:</h4>
